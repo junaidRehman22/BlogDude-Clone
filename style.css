@@ -511,21 +511,30 @@ button#wordpress-hosting h3{
 }
 
 #offer-cards{
+  display: flex;
+  align-items: center;
+  gap: 30px;
   margin-top: 50px;
 }
 
 .card{
-  width: 450px;
-  height:550px;
+  width: 500px;
+  height:650px;
   background-color:#fff;
-  border-radius: 12px;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 15px 25px 36px rgba(0, 0, 0, 0.1);
 }
 
 .card .card-image{
   width: 100%;
   height: 300px;
-  padding: 55px 40px;
+  padding: 60px 45px;
   /* background-color: #3be8b0; */
 }
 
@@ -533,14 +542,63 @@ button#wordpress-hosting h3{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.card button.red-button{
+.card-image img:hover{
+  transform: scale(1.1);
+}
+
+.about-hostinger{
+  padding: 0px 35px;
+}
+
+.card .about-hostinger button.red-button{
   font-size: 17px;
   background-color: #ff4f81;
   color: #fff;
   border-radius: 50px;
   padding: 5px 13px;
   border: none;
-  margin-left: 38px;
+}
+
+.about-hostinger h2{
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000b6;
+  margin-top: 20px;
+}
+
+.about-hostinger h4{
+  font-size: 21px;
+  font-weight: 500;
+  color: #00000063;
+  margin-top: 10px;
+}
+
+.about-hostinger button.discount{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding:17px 40px;
+  font-size: 24px;
+  font-weight: 600;
+  background-color:#4b19f7;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  margin-top: 20px;
+}
+
+.about-hostinger button.discount i{
+  font-size: 28px;
+  font-weight: 400;
+}
+
+#gray-rec{
+  width: 23px;
+  height: 14px;
+  background-color: rgba(164, 164, 164, 0.225);
+  border-radius: 50px;
 }
