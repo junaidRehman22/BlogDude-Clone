@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
   width: 100%;
   height: 100%;
   font-family: poppins, sans-serif;
@@ -24,11 +25,11 @@ html,body{
 
 .navbar {
   width: 80%;
-  height: 10vh;
+  /* height: 10vh; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: 17px auto;
   box-shadow: 5px 25px 36px rgba(0, 0, 0, 0.1);
   border-radius: 7px;
   padding: 17px;
@@ -135,42 +136,41 @@ html,body{
 }
 
 /* ###################### HERO SECTION ###################### */
-.hero{
+.hero {
   width: 100%;
-height: 90%;
+  height: 90%;
   display: flex;
   align-items: center;
-  justify-content:space-between;
-  padding:0px 80px;
+  justify-content: space-between;
+  padding: 0px 90px;
 }
 
-.hero-text{
-width: 50%;
+.hero-text {
+  width: 50%;
 }
 
-.hero-text img{
+.hero-text img {
   width: 70px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.hero-text img:hover{
+.hero-text img:hover {
   transform: translateY(-6px);
 }
 
-.hero-text  h1{
-  font-size: 50px;
+.hero-text h1 {
+  font-size: 60px;
   color: #363636e0;
   font-weight: 600;
   transition: all 0.2s ease;
   position: relative;
 }
 
-
 .image h1::before {
-  content: '';
+  content: "";
   height: 30px;
-  background-color:#ffd900;
+  background-color: #ffd900;
   position: absolute;
   width: 100%;
   bottom: -2%;
@@ -182,27 +182,26 @@ width: 50%;
   height: 85px;
 }
 
-.hero-text .image{
+.hero-text .image {
   display: flex;
   gap: 10px;
 }
 
-
-.hero-text #paragraph{
+.hero-text #paragraph {
   margin-top: 23px;
   font-size: 25px;
   color: #36363665;
   font-weight: 500;
 }
 
-.hero-buttons{
+.hero-buttons {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-top: 23px;
 }
 
-.h-btn{
+.h-btn {
   border: none;
   outline: none;
   font-size: 23px;
@@ -213,9 +212,8 @@ width: 50%;
   color: white;
 }
 
-
-.btn-3{
-  background-color:#7d8dff;
+.btn-3 {
+  background-color: #7d8dff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,18 +221,16 @@ width: 50%;
   text-transform: capitalize;
 }
 
-
-.btn-3:hover i{
+.btn-3:hover i {
   margin-right: 7px;
 }
 
-.btn-3 i{
+.btn-3 i {
   transition: all 0.3s ease;
-  background-color:transparent;
+  background-color: transparent;
 }
 
-
-.btn-4{
+.btn-4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,51 +238,50 @@ width: 50%;
   background-color: #ff7569;
 }
 
-.btn-4:hover{
+.btn-4:hover {
   color: #c6c4c4;
   background-color: #ff5f50;
 }
 
-.btn-4 i{
-  transition:all 0.3s ease;
+.btn-4 i {
+  transition: all 0.3s ease;
 }
 
-.btn-4:hover i{
+.btn-4:hover i {
   margin-right: 8px;
 }
 
-.right{
+.right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width:50%;
+  width: 50%;
   height: 100%;
 }
 
-
-.right img{
-  width:100%;
+.right img {
+  width: 100%;
   object-fit: cover;
-  border-radius:12px;
+  border-radius: 12px;
   transition: transform 0.4s ease;
 }
 
-.right img:hover{
+.right img:hover {
   transform: scale(1.1);
 }
 
-.right h3{
+.right h3 {
   position: relative;
   font-size: 30px;
   color: #353535d8;
   font-weight: 500;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   word-spacing: -2px;
 }
 
 .right h3 span::before {
-  content: '';
+  content: "";
   height: 4px;
   background-color: #3be8b0;
   position: absolute;
@@ -297,11 +292,255 @@ width: 50%;
 }
 
 .right h3 span:hover::before {
-  height:40px;
+  height: 40px;
 }
 
-.right p{
+.right p {
   font-size: 17px;
   color: #353535c1;
   margin-bottom: 20px;
+}
+
+/* ######################### MAIN STYLING ############################  */
+#main {
+  padding: 50px 90px;
+  height: 100%;
+  background-color: #e2e0e049;
+}
+
+#main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#recent-videos h2 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+#recent-videos h4 {
+  font-size: 25px;
+  color: #747171;
+  font-weight: 300;
+}
+
+#btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 25px;
+  background-color: #7d8dff;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#btns i{
+  transition: all 0.3s ease;
+}
+
+#btns:hover i{
+  margin-left: 10px;
+}
+
+#btns i {
+  font-size: 26px;
+}
+
+.work {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 30px;
+  margin-top: 30px;
+  padding: 0px 80px;
+}
+
+.elem {
+  width: 450px;
+  /* height: 600px; */
+  /* background-color: #c6c4c4; */
+  border-radius: 12px;
+  box-shadow: 5px 25px 36px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.elem:hover{
+  transform: scale(1.1);
+}
+
+.elem-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+#img1 {
+  background: url(https://bloggdude.com/wp-content/uploads/2023/12/How-to-Make-a-WordPress-Website-for-FREE-2024-WordPress-Designing-MasterClass-Elementor-Royal-Addons-fotor-20231231135057.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#img2 {
+  background: url(https://bloggdude.com/wp-content/uploads/2023/11/How-to-Make-Freelance-Micro-Job-Marketplace-Website-Like-Fiverr-Freelancer-WordPress-Freeio.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#img3 {
+  background: url(https://bloggdude.com/wp-content/uploads/2023/10/How-to-Start-a-FREE-Money-Making-BLOG-with-Chat-GPT-WordPress-2024.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-top: 25px;
+  padding-left: 20px;
+}
+
+.skills h5 {
+  font-size: 16px;
+  color: #7d8dff;
+}
+
+.elem h2 {
+  margin-top: 14px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+  color: #413b3b;
+  padding-left: 20px;
+}
+
+.datetime {
+  margin-top: 18px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.datetime h5 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #a09c9cd0;
+}
+.datetime i {
+  font-size: 25px;
+  font-weight: 400;
+  color: #a09c9cd0;
+}
+
+.btm-section {
+  margin: 25px 0px;
+  padding: 0px 20px;
+}
+
+.btmleft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btm-image {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.btm-image img {
+  width: 30px;
+  border-radius: 50px;
+}
+
+.btm-image span {
+  font-size: 18px;
+  color: #a09c9cd0;
+}
+
+.readmore {
+  display: flex;
+  align-items: center;
+  color: #a09c9cd0;
+}
+
+.readmpre h5 {
+  font-size: 20px;
+}
+
+.readmore i {
+  font-size: 30px;
+}
+
+#hosting-section{
+  width: 100%;
+  height: 100%;
+  background-color: #dcdce2;
+  padding: 50px 80px;
+}
+
+button#wordpress-hosting{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 20px 40px;
+  background-color: #7d8dff;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+}
+
+#hosting-section{
+  background: url(./assets/asset\ 9.svg);
+}
+
+button#wordpress-hosting i{
+  font-size: 24px;
+}
+
+button#wordpress-hosting h3{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+#offer-cards{
+  margin-top: 50px;
+}
+
+.card{
+  width: 450px;
+  height:550px;
+  background-color:#fff;
+  border-radius: 12px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-image{
+  width: 100%;
+  height: 300px;
+  padding: 55px 40px;
+  /* background-color: #3be8b0; */
+}
+
+.card .card-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card button.red-button{
+  font-size: 17px;
+  background-color: #ff4f81;
+  color: #fff;
+  border-radius: 50px;
+  padding: 5px 13px;
+  border: none;
+  margin-left: 38px;
 }
