@@ -624,9 +624,10 @@ button.discount:hover i{
 #social-btns{
   padding: 50px 80px;
   display: flex;
-  /* justify-content:center; */
-  /* align-items: center; */
+  justify-content:center;
+  align-items: center;
   gap: 30px;
+  margin-top: 50px;
 }
 
 #social-btns a{
@@ -636,7 +637,7 @@ button.discount:hover i{
   text-decoration: none;
   border: none;
   color: #fff;
-  padding: 20px 100px;
+  padding: 20px 80px;
   font-size: 28px;
   font-weight: 600;
   border-radius: 8px;
