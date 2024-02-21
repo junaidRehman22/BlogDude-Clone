@@ -24,6 +24,7 @@ body {
 /* ############################## NAVBAR SECTION ############################### */
 
 .navbar {
+  background-color: #fff;
   width: 80%;
   margin: 0 auto;
   height: 10vh;
@@ -35,7 +36,7 @@ body {
   padding: 17px;
   position: fixed;
   z-index: 100;
-  top: 0;
+  top: 10px;
   left: 10%;
 }
 
@@ -107,7 +108,7 @@ body {
 }
 .btn-1 {
   color: #7d8dff;
-  background-color: #fff;
+  background-color: #7d8cff06;
   transition: background-color 0.2s;
 }
 
