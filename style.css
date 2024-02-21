@@ -483,6 +483,7 @@ body {
   height: 100%;
   background-color: #dcdce2;
   padding: 50px 80px;
+  margin-top: 50px;
 }
 
 button#wordpress-hosting{
@@ -495,6 +496,16 @@ button#wordpress-hosting{
   border-radius: 10px;
   color: #fff;
   border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button#wordpress-hosting:hover i{
+margin-right: 10px;
+}
+
+button#wordpress-hosting:hover{
+  background-color: #6e7ffd;
 }
 
 #hosting-section{
@@ -503,10 +514,11 @@ button#wordpress-hosting{
 
 button#wordpress-hosting i{
   font-size: 24px;
+  transition: margin-right 0.3s ease;
 }
 
 button#wordpress-hosting h3{
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 600;
 }
 
@@ -522,7 +534,8 @@ button#wordpress-hosting h3{
   height:650px;
   background-color:#fff;
   border-radius: 14px;
-  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -591,9 +604,14 @@ button#wordpress-hosting h3{
   margin-top: 20px;
 }
 
+button.discount:hover i{
+  margin-right: 10px;
+}
+
 .about-hostinger button.discount i{
   font-size: 28px;
   font-weight: 400;
+  transition: margin-right 0.2s ease;
 }
 
 #gray-rec{
@@ -602,3 +620,62 @@ button#wordpress-hosting h3{
   background-color: rgba(164, 164, 164, 0.225);
   border-radius: 50px;
 }
+
+#social-btns{
+  padding: 50px 80px;
+  display: flex;
+  /* justify-content:center; */
+  /* align-items: center; */
+  gap: 30px;
+}
+
+#social-btns a{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  padding: 20px 100px;
+  font-size: 28px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#social-btns a i{
+  font-size: 30px;
+}
+
+#social-btns a:nth-child(1){
+  background-color: #ff6c5f;
+}
+
+#social-btns a:nth-child(2){
+  background-color: #1274e7;
+}
+
+#social-btns a:nth-child(3){
+  background-color: #0dd3ff;
+}
+
+#social-btns a:nth-child(4){
+  background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+#footer-btm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+#footer-btm p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#footer-btm span{
+  font-size: 20px;
+  font-weight: 300;
+}
+
